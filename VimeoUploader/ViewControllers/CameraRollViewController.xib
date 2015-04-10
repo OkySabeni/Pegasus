@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraRollViewController">
+            <connections>
+                <outlet property="collectionView" destination="FIR-Sq-JP0" id="c0R-fp-JON"/>
+                <outlet property="pauseResumeButton" destination="hN1-ff-gFY" id="J8K-9D-ELY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="a61-D7-Akk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-Sq-JP0">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="vzj-jV-laz">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1HH-cD-gsy"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRQ-C0-don">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJg-ki-T9J">
+                            <rect key="frame" x="516" y="7" width="69" height="30"/>
+                            <state key="normal" title="Cancel All">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapCancelAll:" destination="-1" eventType="touchUpInside" id="F9E-QZ-oJN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-G8-3f2">
+                            <rect key="frame" x="15" y="7" width="71" height="30"/>
+                            <state key="normal" title="Upload All">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapUploadAll:" destination="-1" eventType="touchUpInside" id="wuY-dh-xxx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN1-ff-gFY">
+                            <rect key="frame" x="268" y="7" width="64" height="30"/>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Pause All">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="Resume All"/>
+                            <connections>
+                                <action selector="didTapSuspendResumeAll:" destination="-1" eventType="touchUpInside" id="idj-Pa-vzr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="QJg-ki-T9J" secondAttribute="centerY" id="9Gx-HK-nhn"/>
+                        <constraint firstItem="i7w-G8-3f2" firstAttribute="leading" secondItem="xRQ-C0-don" secondAttribute="leading" constant="15" id="BbR-xH-Zdh"/>
+                        <constraint firstAttribute="trailing" secondItem="QJg-ki-T9J" secondAttribute="trailing" constant="15" id="EhY-AG-oar"/>
+                        <constraint firstAttribute="centerX" secondItem="hN1-ff-gFY" secondAttribute="centerX" id="IAM-TY-uRS"/>
+                        <constraint firstAttribute="centerX" secondItem="QJg-ki-T9J" secondAttribute="centerX" id="Vnt-YD-DwH"/>
+                        <constraint firstAttribute="centerY" secondItem="i7w-G8-3f2" secondAttribute="centerY" id="Z8G-n2-sQ3"/>
+                        <constraint firstAttribute="centerY" secondItem="hN1-ff-gFY" secondAttribute="centerY" id="mBH-9Y-0nd"/>
+                        <constraint firstAttribute="trailing" secondItem="hN1-ff-gFY" secondAttribute="trailing" constant="15" id="o5f-tn-eE2"/>
+                        <constraint firstAttribute="height" constant="44" id="ojl-bf-gBI"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="o5f-tn-eE2"/>
+                            <exclude reference="Vnt-YD-DwH"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FIR-Sq-JP0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2uL-gt-hv5"/>
+                <constraint firstAttribute="trailing" secondItem="FIR-Sq-JP0" secondAttribute="trailing" id="IN5-c2-g1Z"/>
+                <constraint firstItem="FIR-Sq-JP0" firstAttribute="top" secondItem="xRQ-C0-don" secondAttribute="bottom" id="LQ3-zQ-7Ax"/>
+                <constraint firstItem="xRQ-C0-don" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M07-Az-4mi"/>
+                <constraint firstAttribute="trailing" secondItem="xRQ-C0-don" secondAttribute="trailing" id="XdD-2j-p7u"/>
+                <constraint firstItem="xRQ-C0-don" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a98-jA-O4E"/>
+                <constraint firstItem="FIR-Sq-JP0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l8s-vw-9h9"/>
+                <constraint firstAttribute="bottom" secondItem="FIR-Sq-JP0" secondAttribute="bottom" id="rnB-bJ-UPh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2uL-gt-hv5"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="400" y="209"/>
+        </view>
+    </objects>
+</document>
