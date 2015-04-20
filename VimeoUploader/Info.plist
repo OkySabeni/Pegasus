@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vimeo7fa5b9aa5518a3f1e189bc9d019ec31b023566ed</string>
+				<string>vimeoYOUR_CLIENT_ID</string>
 			</array>
 		</dict>
 	</array>

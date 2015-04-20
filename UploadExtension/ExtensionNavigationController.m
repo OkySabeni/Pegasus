@@ -35,19 +35,20 @@
 #import "VIMAPIClient.h"
 #import "VIMVideoMetadata.h"
 #import "KeychainUtility.h"
+#import "VIMTempFileMaker.h"
 
 #import <MobileCoreServices/MobileCoreServices.h>
 
-static NSString *ClientKey = @"7fa5b9aa5518a3f1e189bc9d019ec31b023566ed";
-static NSString *ClientSecret = @"cad8525e7943d4711776b971f3f719422e21d77c";
+static NSString *ClientKey = @"YOUR_CLIENT_KEY";
+static NSString *ClientSecret = @"YOUR_CLIENT_SECRET";
 static NSString *Scope = @"private public create edit delete interact upload";
 
-static NSString *BackgroundSessionIdentifierApp = @"com.vimeo.pegasus.background_session_identifier.app";
-static NSString *BackgroundSessionIdentifierExtension = @"com.vimeo.pegasus.background_session_identifier.extension";
-static NSString *SharedContainerID = @"group.com.vimeo.pegasus";
+static NSString *BackgroundSessionIdentifierApp = @"YOUR_APP_BG_SESSION_ID";
+static NSString *BackgroundSessionIdentifierExtension = @"YOUR_EXTENSION_BG_SESSION_ID"; // Must be different from BackgroundSessionIdentifierApp
+static NSString *SharedContainerID = @"YOUR_SHARED_CONTAINER_ID";
 
-static NSString *KeychainAccessGroup = @"35R365FS4Q.com.vimeo.pegasus.shared_keychain";
-static NSString *KeychainService = @"com.vimeo.pegasus.keychain_service";
+static NSString *KeychainAccessGroup = @"YOUR_KEYCHAIN_ACCESS_GROUP";
+static NSString *KeychainService = @"YOUR_KEYCHAIN_SERVICE";
 
 static NSString *ExtensionErrorDomain = @"ExtensionErrorDomain";
 
@@ -88,25 +89,39 @@ static NSString *ExtensionErrorDomain = @"ExtensionErrorDomain";
             {
                 [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeMovie options:nil completionHandler:^(NSURL *fileURL, NSError *error) {
 
-                    dispatch_async(dispatch_get_main_queue(), ^{
-
-                        if (fileURL)
-                        {
-                            AVURLAsset *URLAsset = [AVURLAsset assetWithURL:fileURL];
-                            VIMVideoAsset *videoAsset = [[VIMVideoAsset alloc] initWithURLAsset:URLAsset];
+                    if (!fileURL)
+                    {
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self.extensionContext cancelRequestWithError:error];
+                        });
+                        
+                        return;
+                    }
+                    
+                    AVURLAsset *URLAsset = [AVURLAsset assetWithURL:fileURL];
+                    [VIMTempFileMaker tempFileFromURLAsset:URLAsset completionBlock:^(NSString *path, NSError *error) {
+                    
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            
+                            if (error)
+                            {
+                                [self.extensionContext cancelRequestWithError:error];
+                            
+                                return;
+                            }
+                            
+                            AVURLAsset *tempURLAsset = [AVURLAsset assetWithURL:[NSURL URLWithString:path]];
+                            VIMVideoAsset *videoAsset = [[VIMVideoAsset alloc] initWithURLAsset:tempURLAsset canUploadFromSource:YES];
                             [[VIMUploadTaskQueue sharedExtensionQueue] uploadVideoAssets:@[videoAsset]];
                             
                             MetadataViewController *viewController = [[MetadataViewController alloc] initWithVideoAsset:videoAsset];
                             viewController.delegate = self;
-
+                            
                             [self setViewControllers:@[viewController] animated:YES];
-                        }
-                        else
-                        {
-                            [self.extensionContext cancelRequestWithError:error];
-                        }
+                            
+                        });
 
-                    });
+                    }];
                     
                 }];
                 
@@ -135,7 +150,7 @@ static NSString *ExtensionErrorDomain = @"ExtensionErrorDomain";
     VIMVideoAsset *videoAsset = viewController.videoAsset;
     VIMVideoMetadata *videoMetadata = viewController.videoMetadata;
     
-    [[VIMUploadTaskQueue sharedAppQueue] addMetadata:videoMetadata toVideoAsset:videoAsset withCompletionBlock:^(BOOL didAdd) {
+    [[VIMUploadTaskQueue sharedExtensionQueue] addMetadata:videoMetadata toVideoAsset:videoAsset withCompletionBlock:^(BOOL didAdd) {
 
         if (!didAdd)
         {
@@ -145,7 +160,7 @@ static NSString *ExtensionErrorDomain = @"ExtensionErrorDomain";
                     
                     if (error)
                     {
-                        NSLog(@"Error setting metadata via VIMAPIClient");
+                        NSLog(@"E1rror setting metadata via VIMAPIClient");
                     }
                     else
                     {
