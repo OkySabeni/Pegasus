@@ -21,6 +21,7 @@ static NSString *SharedContainerID = @"YOUR_SHARED_CONTAINER_ID";
 static NSString *KeychainAccessGroup = @"YOUR_KEYCHAIN_ACCESS_GROUP";
 static NSString *KeychainService = @"YOUR_KEYCHAIN_SERVICE";
 ```
+Also replace the placeholder "URL Schemes" value in the `Info.plist` (`vimeoYOUR_CLIENT_ID`) with the appropriate value.
 
 Obtain a client key and secret [here](https://developer.vimeo.com/apps)
 
