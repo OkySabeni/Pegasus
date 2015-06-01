@@ -2,7 +2,7 @@
 platform :ios, '7.0'
 
 target 'Pegasus' do
-	pod 'VIMNetworking', :git => 'https://github.com/vimeo/VIMNetworking.git', :branch => 'cocoapod'
+	pod 'VIMNetworking', :git => 'https://github.com/vimeo/VIMNetworking.git', :branch => 'cocoapods'
 	pod 'VIMObjectMapper', :git => 'https://github.com/vimeo/VIMObjectMapper.git', :branch => 'cocoapod'
 	pod 'AFNetworking', '2.5.3'
 end
@@ -12,7 +12,7 @@ target 'PegasusTests' do
 end
 
 target 'PegasusExtension' do
-	pod 'VIMNetworking', :git => 'https://github.com/vimeo/VIMNetworking.git', :branch => 'cocoapod'
+	pod 'VIMNetworking', :git => 'https://github.com/vimeo/VIMNetworking.git', :branch => 'cocoapods'
 	pod 'VIMObjectMapper', :git => 'https://github.com/vimeo/VIMObjectMapper.git', :branch => 'cocoapod'
 	pod 'AFNetworking', '2.5.3'
 end

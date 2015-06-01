@@ -25,12 +25,12 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.3)
-  - VIMNetworking (from `https://github.com/vimeo/VIMNetworking.git`, branch `cocoapod`)
+  - VIMNetworking (from `https://github.com/vimeo/VIMNetworking.git`, branch `cocoapods`)
   - VIMObjectMapper (from `https://github.com/vimeo/VIMObjectMapper.git`, branch `cocoapod`)
 
 EXTERNAL SOURCES:
   VIMNetworking:
-    :branch: cocoapod
+    :branch: cocoapods
     :git: https://github.com/vimeo/VIMNetworking.git
   VIMObjectMapper:
     :branch: cocoapod
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   VIMNetworking:
-    :commit: 84fde5452abbca888b4a7f07eade6348f57eb2a0
+    :commit: e1af31f2ea0b9c3c34f5cd0029ad707cd0345e15
     :git: https://github.com/vimeo/VIMNetworking.git
   VIMObjectMapper:
     :commit: 7500e80aa04decfd4d96992909df793829926960
