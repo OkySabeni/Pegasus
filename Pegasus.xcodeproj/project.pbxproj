@@ -24,7 +24,6 @@
 		508B067F1A488F5200DC2375 /* CameraRollDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B067E1A488F5200DC2375 /* CameraRollDatasource.m */; };
 		508B06821A488F6B00DC2375 /* MyVideosDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B06811A488F6B00DC2375 /* MyVideosDatasource.m */; };
 		508B06851A488FED00DC2375 /* Datasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B06841A488FED00DC2375 /* Datasource.m */; };
-		508B07A61A48961600DC2375 /* libVIMNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A31A4895FB00DC2375 /* libVIMNetworking.a */; };
 		508B07A81A48962000DC2375 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A71A48962000DC2375 /* Social.framework */; };
 		508B07AA1A48962500DC2375 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A91A48962500DC2375 /* Accounts.framework */; };
 		508B07AC1A48962D00DC2375 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07AB1A48962D00DC2375 /* MobileCoreServices.framework */; };
@@ -48,10 +47,11 @@
 		50C02F191A7C10AF006B730D /* AnimatedLoadingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C02EFD1A7AD56D006B730D /* AnimatedLoadingBar.m */; };
 		50C02F271A7C1119006B730D /* MetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C02EF21A7AD00C006B730D /* MetadataViewController.m */; };
 		50C02F281A7C1120006B730D /* MetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C02EF31A7AD00C006B730D /* MetadataViewController.xib */; };
-		50C02F291A7C1161006B730D /* libVIMNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A31A4895FB00DC2375 /* libVIMNetworking.a */; };
 		50C02F311A7C136B006B730D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A91A48962500DC2375 /* Accounts.framework */; };
 		50C02F321A7C1372006B730D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A71A48962000DC2375 /* Social.framework */; };
+		87ED2BE5A125492BD221614D /* libPods-Pegasus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */; };
 		AF2350CD1A5D51070095A034 /* StreamDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2350CC1A5D51070095A034 /* StreamDescriptor.m */; };
+		D22D3032566CA5664527DD47 /* libPods-PegasusExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1171D1BD2B1B455E48E64CD6 /* libPods-PegasusExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,40 +62,12 @@
 			remoteGlobalIDString = 508B06321A48867000DC2375;
 			remoteInfo = VimeoUploader;
 		};
-		508B07A21A4895FB00DC2375 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB633AB218F364ED00971630;
-			remoteInfo = VIMNetworking;
-		};
-		508B07A41A4895FB00DC2375 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB633AC218F364ED00971630;
-			remoteInfo = VIMNetworkingTests;
-		};
 		50C02F121A7BF417006B730D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 508B062B1A48867000DC2375 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 50C02F081A7BF417006B730D;
 			remoteInfo = UploadExtension;
-		};
-		50C02F2A1A7C1193006B730D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AB633AB118F364ED00971630;
-			remoteInfo = VIMNetworking;
-		};
-		50ECAB0D1A5DF13F00C8F3AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AB633AB118F364ED00971630;
-			remoteInfo = VIMNetworking;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0077DA0995029A21954FEE42 /* Pods-PegasusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PegasusExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PegasusExtension/Pods-PegasusExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1171D1BD2B1B455E48E64CD6 /* libPods-PegasusExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PegasusExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC5DD1EAB0D25429FA57782 /* Pods-PegasusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PegasusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PegasusExtension/Pods-PegasusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		5007A5B81A800FEB007C5BF4 /* Pegasus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Pegasus.entitlements; sourceTree = "<group>"; };
 		5007A5B91A800FF3007C5BF4 /* PegasusExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PegasusExtension.entitlements; sourceTree = "<group>"; };
 		508B06331A48867000DC2375 /* Pegasus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegasus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +121,6 @@
 		508B06811A488F6B00DC2375 /* MyVideosDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVideosDatasource.m; sourceTree = "<group>"; };
 		508B06831A488FED00DC2375 /* Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource.h; sourceTree = "<group>"; };
 		508B06841A488FED00DC2375 /* Datasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource.m; sourceTree = "<group>"; };
-		508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = VIMNetworking.xcodeproj; sourceTree = "<group>"; };
 		508B07A71A48962000DC2375 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		508B07A91A48962500DC2375 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		508B07AB1A48962D00DC2375 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -177,8 +151,11 @@
 		50C02F0C1A7BF417006B730D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50C02F0D1A7BF417006B730D /* ExtensionNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ExtensionNavigationController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		50C02F0E1A7BF417006B730D /* ExtensionNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ExtensionNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		56C257C61FC70DC730923DFA /* Pods-Pegasus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegasus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pegasus/Pods-Pegasus.release.xcconfig"; sourceTree = "<group>"; };
+		772C3EAC570B074DAEEED91A /* Pods-Pegasus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegasus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pegasus/Pods-Pegasus.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2350CB1A5D51070095A034 /* StreamDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StreamDescriptor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AF2350CC1A5D51070095A034 /* StreamDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StreamDescriptor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pegasus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +168,7 @@
 				508B07AC1A48962D00DC2375 /* MobileCoreServices.framework in Frameworks */,
 				508B07AA1A48962500DC2375 /* Accounts.framework in Frameworks */,
 				508B07A81A48962000DC2375 /* Social.framework in Frameworks */,
-				508B07A61A48961600DC2375 /* libVIMNetworking.a in Frameworks */,
+				87ED2BE5A125492BD221614D /* libPods-Pegasus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +185,22 @@
 			files = (
 				50C02F321A7C1372006B730D /* Social.framework in Frameworks */,
 				50C02F311A7C136B006B730D /* Accounts.framework in Frameworks */,
-				50C02F291A7C1161006B730D /* libVIMNetworking.a in Frameworks */,
+				D22D3032566CA5664527DD47 /* libPods-PegasusExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30BDF0B6F139B09312A45E06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */,
+				1171D1BD2B1B455E48E64CD6 /* libPods-PegasusExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		508B062A1A48867000DC2375 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +210,8 @@
 				508B064F1A48867000DC2375 /* VimeoUploaderTests */,
 				50C02F0A1A7BF417006B730D /* UploadExtension */,
 				508B06341A48867000DC2375 /* Products */,
+				E18B59F8BA2BE01BD9C09531 /* Pods */,
+				30BDF0B6F139B09312A45E06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,7 +237,6 @@
 				508B06631A488BE600DC2375 /* Cells */,
 				508B06431A48867000DC2375 /* Images.xcassets */,
 				508B06451A48867000DC2375 /* LaunchScreen.xib */,
-				508B06861A4895FA00DC2375 /* Submodules */,
 				508B07AD1A48964800DC2375 /* Frameworks */,
 				508B06361A48867000DC2375 /* Supporting Files */,
 			);
@@ -340,23 +327,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		508B06861A4895FA00DC2375 /* Submodules */ = {
-			isa = PBXGroup;
-			children = (
-				508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */,
-			);
-			path = Submodules;
-			sourceTree = SOURCE_ROOT;
-		};
-		508B07451A4895FB00DC2375 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				508B07A31A4895FB00DC2375 /* libVIMNetworking.a */,
-				508B07A51A4895FB00DC2375 /* VIMNetworkingTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		508B07AD1A48964800DC2375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +377,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E18B59F8BA2BE01BD9C09531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				772C3EAC570B074DAEEED91A /* Pods-Pegasus.debug.xcconfig */,
+				56C257C61FC70DC730923DFA /* Pods-Pegasus.release.xcconfig */,
+				0077DA0995029A21954FEE42 /* Pods-PegasusExtension.debug.xcconfig */,
+				4CC5DD1EAB0D25429FA57782 /* Pods-PegasusExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,15 +395,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 508B06561A48867000DC2375 /* Build configuration list for PBXNativeTarget "Pegasus" */;
 			buildPhases = (
+				49B08F4C40750A7461A81088 /* Check Pods Manifest.lock */,
 				508B062F1A48867000DC2375 /* Sources */,
 				508B06301A48867000DC2375 /* Frameworks */,
 				508B06311A48867000DC2375 /* Resources */,
 				50C02F181A7BF417006B730D /* Embed App Extensions */,
+				4C22B5EF593C755C5A0DC36A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50ECAB0E1A5DF13F00C8F3AA /* PBXTargetDependency */,
 				50C02F131A7BF417006B730D /* PBXTargetDependency */,
 			);
 			name = Pegasus;
@@ -452,14 +434,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C02F151A7BF417006B730D /* Build configuration list for PBXNativeTarget "PegasusExtension" */;
 			buildPhases = (
+				79ED05CC5F9B154D8E1B0F64 /* Check Pods Manifest.lock */,
 				50C02F051A7BF417006B730D /* Sources */,
 				50C02F061A7BF417006B730D /* Frameworks */,
 				50C02F071A7BF417006B730D /* Resources */,
+				248556D4133623AE1B7EC684 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50C02F2B1A7C1193006B730D /* PBXTargetDependency */,
 			);
 			name = PegasusExtension;
 			productName = UploadExtension;
@@ -519,12 +502,6 @@
 			mainGroup = 508B062A1A48867000DC2375;
 			productRefGroup = 508B06341A48867000DC2375 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 508B07451A4895FB00DC2375 /* Products */;
-					ProjectRef = 508B07441A4895FB00DC2375 /* VIMNetworking.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				508B06321A48867000DC2375 /* Pegasus */,
@@ -533,23 +510,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		508B07A31A4895FB00DC2375 /* libVIMNetworking.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libVIMNetworking.a;
-			remoteRef = 508B07A21A4895FB00DC2375 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		508B07A51A4895FB00DC2375 /* VIMNetworkingTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = VIMNetworkingTests.xctest;
-			remoteRef = 508B07A41A4895FB00DC2375 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		508B06311A48867000DC2375 /* Resources */ = {
@@ -586,6 +546,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		248556D4133623AE1B7EC684 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PegasusExtension/Pods-PegasusExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49B08F4C40750A7461A81088 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C22B5EF593C755C5A0DC36A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pegasus/Pods-Pegasus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79ED05CC5F9B154D8E1B0F64 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		508B062F1A48867000DC2375 /* Sources */ = {
@@ -645,16 +668,6 @@
 			target = 50C02F081A7BF417006B730D /* PegasusExtension */;
 			targetProxy = 50C02F121A7BF417006B730D /* PBXContainerItemProxy */;
 		};
-		50C02F2B1A7C1193006B730D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VIMNetworking;
-			targetProxy = 50C02F2A1A7C1193006B730D /* PBXContainerItemProxy */;
-		};
-		50ECAB0E1A5DF13F00C8F3AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VIMNetworking;
-			targetProxy = 50ECAB0D1A5DF13F00C8F3AA /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -692,10 +705,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -747,6 +757,7 @@
 		};
 		508B06571A48867000DC2375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772C3EAC570B074DAEEED91A /* Pods-Pegasus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pegasus.entitlements;
@@ -755,9 +766,11 @@
 				INFOPLIST_FILE = VimeoUploader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
+				OTHER_LIBTOOLFLAGS = "$(inherited) $(OTHER_LDFLAGS)";
 				PRODUCT_NAME = Pegasus;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Submodules/VIMNetworking/**";
@@ -766,6 +779,7 @@
 		};
 		508B06581A48867000DC2375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C257C61FC70DC730923DFA /* Pods-Pegasus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pegasus.entitlements;
@@ -774,9 +788,11 @@
 				INFOPLIST_FILE = VimeoUploader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
+				OTHER_LIBTOOLFLAGS = "$(inherited) $(OTHER_LDFLAGS)";
 				PRODUCT_NAME = Pegasus;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Submodules/VIMNetworking/**";
@@ -819,20 +835,23 @@
 		};
 		50C02F161A7BF417006B730D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0077DA0995029A21954FEE42 /* Pods-PegasusExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PegasusExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					UPLOAD_EXTENSION,
-					"DEBUG=1",
 				);
 				INFOPLIST_FILE = UploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
+				OTHER_LIBTOOLFLAGS = "$(inherited) $(OTHER_LDFLAGS)";
 				PRODUCT_NAME = PegasusExtension;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -842,17 +861,23 @@
 		};
 		50C02F171A7BF417006B730D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC5DD1EAB0D25429FA57782 /* Pods-PegasusExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PegasusExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = UPLOAD_EXTENSION;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					UPLOAD_EXTENSION,
+				);
 				INFOPLIST_FILE = UploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
+				OTHER_LIBTOOLFLAGS = "$(inherited) $(OTHER_LDFLAGS)";
 				PRODUCT_NAME = PegasusExtension;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
