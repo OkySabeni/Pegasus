@@ -1,6 +1,6 @@
 {
   "name": "VIMNetworking",
-  "version": "0.0.1",
+  "version": "5.4.2",
   "summary": "The Vimeo iOS SDK.",
   "description": "                   VIMNetworking is an Objective-C library that enables interaction with the Vimeo API. It handles authentication, request submission and cancellation, and video upload. Advanced features include caching and powerful model object parsing.\n",
   "homepage": "https://github.com/vimeo/VIMNetworking",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/vimeo/VIMNetworking.git",
-    "branch": "cocoapods"
+    "branch": "dev"
   },
   "source_files": [
     "VIMNetworking",

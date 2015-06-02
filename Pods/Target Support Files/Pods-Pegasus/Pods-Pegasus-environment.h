@@ -50,9 +50,9 @@
 
 // VIMNetworking
 #define COCOAPODS_POD_AVAILABLE_VIMNetworking
-#define COCOAPODS_VERSION_MAJOR_VIMNetworking 0
-#define COCOAPODS_VERSION_MINOR_VIMNetworking 0
-#define COCOAPODS_VERSION_PATCH_VIMNetworking 1
+#define COCOAPODS_VERSION_MAJOR_VIMNetworking 5
+#define COCOAPODS_VERSION_MINOR_VIMNetworking 4
+#define COCOAPODS_VERSION_PATCH_VIMNetworking 2
 
 // VIMObjectMapper
 #define COCOAPODS_POD_AVAILABLE_VIMObjectMapper

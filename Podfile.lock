@@ -20,33 +20,33 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - VIMNetworking (0.0.1)
+  - VIMNetworking (5.4.2)
   - VIMObjectMapper (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.3)
-  - VIMNetworking (from `https://github.com/vimeo/VIMNetworking.git`, branch `cocoapods`)
-  - VIMObjectMapper (from `https://github.com/vimeo/VIMObjectMapper.git`, branch `cocoapod`)
+  - VIMNetworking (from `https://github.com/vimeo/VIMNetworking.git`, branch `dev`)
+  - VIMObjectMapper (from `https://github.com/vimeo/VIMObjectMapper.git`, tag `5.4.2`)
 
 EXTERNAL SOURCES:
   VIMNetworking:
-    :branch: cocoapods
+    :branch: dev
     :git: https://github.com/vimeo/VIMNetworking.git
   VIMObjectMapper:
-    :branch: cocoapod
     :git: https://github.com/vimeo/VIMObjectMapper.git
+    :tag: 5.4.2
 
 CHECKOUT OPTIONS:
   VIMNetworking:
-    :commit: c2db1b77eb22ff1d3d19886622d9a8e6f3d0d122
+    :commit: d801d1d5470a0baf1426164ac48a0f6aab6ec41b
     :git: https://github.com/vimeo/VIMNetworking.git
   VIMObjectMapper:
-    :commit: 4adfde6ec16d09744220fa1864b879fe8bcbcedc
     :git: https://github.com/vimeo/VIMObjectMapper.git
+    :tag: 5.4.2
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
-  VIMNetworking: d272a27475a9b4dc95c0d7617892bb8e4cb1422d
+  VIMNetworking: 9ebefc7489b35ecb1b9f61e700d293402cc537de
   VIMObjectMapper: b726bf43c7353170ad112f21d99b95a7c653bcc3
 
 COCOAPODS: 0.37.2
