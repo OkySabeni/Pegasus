@@ -1,0 +1,1 @@
+PODS_PEGASUS_VIMNETWORKING_OTHER_LDFLAGS = -framework "Foundation"
