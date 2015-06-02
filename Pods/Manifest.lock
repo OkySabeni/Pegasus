@@ -38,15 +38,15 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   VIMNetworking:
-    :commit: e1af31f2ea0b9c3c34f5cd0029ad707cd0345e15
+    :commit: c2db1b77eb22ff1d3d19886622d9a8e6f3d0d122
     :git: https://github.com/vimeo/VIMNetworking.git
   VIMObjectMapper:
-    :commit: 7500e80aa04decfd4d96992909df793829926960
+    :commit: 4adfde6ec16d09744220fa1864b879fe8bcbcedc
     :git: https://github.com/vimeo/VIMObjectMapper.git
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
-  VIMNetworking: 6c866ed2bf53cb2897115680a59e4255f123f775
-  VIMObjectMapper: b8ea020ac127187aa0606302e5712d3a8cbf1747
+  VIMNetworking: d272a27475a9b4dc95c0d7617892bb8e4cb1422d
+  VIMObjectMapper: b726bf43c7353170ad112f21d99b95a7c653bcc3
 
 COCOAPODS: 0.37.2

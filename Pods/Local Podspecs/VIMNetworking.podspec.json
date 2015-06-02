@@ -16,12 +16,13 @@
   },
   "source": {
     "git": "https://github.com/vimeo/VIMNetworking.git",
-    "branch": "cocoapod"
+    "branch": "cocoapods"
   },
   "source_files": [
     "VIMNetworking",
     "VIMNetworking/**/*.{h,m}"
   ],
   "exclude_files": "VIMNetworking/Exclude",
+  "frameworks": "Foundation",
   "requires_arc": true
 }
