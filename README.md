@@ -10,15 +10,9 @@ A sample app illustrating the core features of [VIMNetworking](https://github.co
     $ cd Pegasus
     ```
 
-2. Setup submodule dependencies
+2. Cocoapods
 
-    ```bash
-    $ git submodule init
-    $ git submodule update
-    $ cd Submodules/VIMNetworking/
-    $ git submodule init
-    $ git submodule update
-    ```
+Install cocoapods if necessary. Then run `pod install` in the Pegasus root directory.
 
 3. Obtain a client key and secret [here](https://developer.vimeo.com/apps), then replace the placeholder values at the top of `AppDelegate.h`
 
