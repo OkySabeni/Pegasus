@@ -51,6 +51,8 @@
 		50C02F321A7C1372006B730D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B07A71A48962000DC2375 /* Social.framework */; };
 		87ED2BE5A125492BD221614D /* libPods-Pegasus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */; };
 		AF2350CD1A5D51070095A034 /* StreamDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2350CC1A5D51070095A034 /* StreamDescriptor.m */; };
+		AF93D7831B25F29E00BD05B3 /* digicert-root.cer in Resources */ = {isa = PBXBuildFile; fileRef = AF93D7821B25F29E00BD05B3 /* digicert-root.cer */; };
+		AF93D7841B25F29E00BD05B3 /* digicert-root.cer in Resources */ = {isa = PBXBuildFile; fileRef = AF93D7821B25F29E00BD05B3 /* digicert-root.cer */; };
 		D22D3032566CA5664527DD47 /* libPods-PegasusExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1171D1BD2B1B455E48E64CD6 /* libPods-PegasusExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +157,7 @@
 		772C3EAC570B074DAEEED91A /* Pods-Pegasus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegasus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pegasus/Pods-Pegasus.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2350CB1A5D51070095A034 /* StreamDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StreamDescriptor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AF2350CC1A5D51070095A034 /* StreamDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StreamDescriptor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF93D7821B25F29E00BD05B3 /* digicert-root.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digicert-root.cer"; sourceTree = "<group>"; };
 		E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pegasus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -228,6 +231,7 @@
 		508B06351A48867000DC2375 /* VimeoUploader */ = {
 			isa = PBXGroup;
 			children = (
+				AF93D7821B25F29E00BD05B3 /* digicert-root.cer */,
 				508B063A1A48867000DC2375 /* AppDelegate.h */,
 				508B063B1A48867000DC2375 /* AppDelegate.m */,
 				50C02EED1A7ACE48006B730D /* Views */,
@@ -521,6 +525,7 @@
 				508B07CC1A49C1A000DC2375 /* SettingsViewController.xib in Resources */,
 				508B066D1A488BE600DC2375 /* CameraRollViewController.xib in Resources */,
 				508B06471A48867000DC2375 /* LaunchScreen.xib in Resources */,
+				AF93D7831B25F29E00BD05B3 /* digicert-root.cer in Resources */,
 				508B07D11A49C2C400DC2375 /* SettingsCell.xib in Resources */,
 				508B066F1A488BE600DC2375 /* MyVideosViewController.xib in Resources */,
 				508B067C1A488D8B00DC2375 /* MyVideosCell.xib in Resources */,
@@ -542,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C02F281A7C1120006B730D /* MetadataViewController.xib in Resources */,
+				AF93D7841B25F29E00BD05B3 /* digicert-root.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

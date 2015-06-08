@@ -1,52 +1,42 @@
 PODS:
-  - AFNetworking (2.5.3):
-    - AFNetworking/NSURLConnection (= 2.5.3)
-    - AFNetworking/NSURLSession (= 2.5.3)
-    - AFNetworking/Reachability (= 2.5.3)
-    - AFNetworking/Security (= 2.5.3)
-    - AFNetworking/Serialization (= 2.5.3)
-    - AFNetworking/UIKit (= 2.5.3)
-  - AFNetworking/NSURLConnection (2.5.3):
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.3):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.3)
-  - AFNetworking/Security (2.5.3)
-  - AFNetworking/Serialization (2.5.3)
-  - AFNetworking/UIKit (2.5.3):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - VIMNetworking (5.4.2)
-  - VIMObjectMapper (1.0.1)
+  - VIMNetworking (5.4.2):
+    - VIMNetworking/AFNetworking (= 5.4.2)
+    - VIMNetworking/VIMObjectMapper (= 5.4.2)
+  - VIMNetworking/AFNetworking (5.4.2):
+    - AFNetworking (~> 2.5.3)
+  - VIMNetworking/VIMObjectMapper (5.4.2):
+    - VIMObjectMapper (~> 5.4.2)
+  - VIMObjectMapper (5.4.2)
 
 DEPENDENCIES:
-  - AFNetworking (= 2.5.3)
-  - VIMNetworking (from `https://github.com/vimeo/VIMNetworking.git`, branch `dev`)
-  - VIMObjectMapper (from `https://github.com/vimeo/VIMObjectMapper.git`, tag `5.4.2`)
-
-EXTERNAL SOURCES:
-  VIMNetworking:
-    :branch: dev
-    :git: https://github.com/vimeo/VIMNetworking.git
-  VIMObjectMapper:
-    :git: https://github.com/vimeo/VIMObjectMapper.git
-    :tag: 5.4.2
-
-CHECKOUT OPTIONS:
-  VIMNetworking:
-    :commit: d801d1d5470a0baf1426164ac48a0f6aab6ec41b
-    :git: https://github.com/vimeo/VIMNetworking.git
-  VIMObjectMapper:
-    :git: https://github.com/vimeo/VIMObjectMapper.git
-    :tag: 5.4.2
+  - AFNetworking (= 2.5.4)
+  - VIMNetworking (= 5.4.2)
+  - VIMObjectMapper (= 5.4.2)
 
 SPEC CHECKSUMS:
-  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
-  VIMNetworking: 9ebefc7489b35ecb1b9f61e700d293402cc537de
-  VIMObjectMapper: b726bf43c7353170ad112f21d99b95a7c653bcc3
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  VIMNetworking: 59372689956619a729a1452bb2f49106b23961eb
+  VIMObjectMapper: 826fc9f0a3d79fa6648f0dac1718e14fa4933390
 
 COCOAPODS: 0.37.2

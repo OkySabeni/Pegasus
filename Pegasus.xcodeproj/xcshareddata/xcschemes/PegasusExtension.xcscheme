@@ -35,6 +35,20 @@
                ReferencedContainer = "container:Pegasus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "508B064B1A48867000DC2375"
+               BuildableName = "PegasusTests.xctest"
+               BlueprintName = "PegasusTests"
+               ReferencedContainer = "container:Pegasus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,13 +57,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "508B064B1A48867000DC2375"
+               BuildableName = "PegasusTests.xctest"
+               BlueprintName = "PegasusTests"
+               ReferencedContainer = "container:Pegasus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50C02F081A7BF417006B730D"
-            BuildableName = "PegasusExtension.appex"
-            BlueprintName = "PegasusExtension"
+            BlueprintIdentifier = "508B06321A48867000DC2375"
+            BuildableName = "Pegasus.app"
+            BlueprintName = "Pegasus"
             ReferencedContainer = "container:Pegasus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
