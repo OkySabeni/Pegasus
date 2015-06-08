@@ -28,6 +28,7 @@
 
 #import "MyVideosDatasource.h"
 #import "MyVideosCell.h"
+#import "PlayerViewController.h"
 
 static NSString *MyVideosTitle = @"My Videos";
 
@@ -73,6 +74,17 @@ static NSString *MyVideosTitle = @"My Videos";
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - UICollectionView Delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PlayerViewController *viewController = [[PlayerViewController alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 @end

@@ -28,15 +28,18 @@ PODS:
   - VIMNetworking/VIMObjectMapper (5.4.2):
     - VIMObjectMapper (~> 5.4.2)
   - VIMObjectMapper (5.4.2)
+  - VIMVideoPlayer (5.4.2)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - VIMNetworking (= 5.4.2)
   - VIMObjectMapper (= 5.4.2)
+  - VIMVideoPlayer (= 5.4.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   VIMNetworking: 59372689956619a729a1452bb2f49106b23961eb
   VIMObjectMapper: 826fc9f0a3d79fa6648f0dac1718e14fa4933390
+  VIMVideoPlayer: 386073a02b0c069935b58c01f18eebeac974d710
 
 COCOAPODS: 0.37.2

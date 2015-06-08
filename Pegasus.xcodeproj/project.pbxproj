@@ -53,6 +53,8 @@
 		AF2350CD1A5D51070095A034 /* StreamDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2350CC1A5D51070095A034 /* StreamDescriptor.m */; };
 		AF93D7831B25F29E00BD05B3 /* digicert-root.cer in Resources */ = {isa = PBXBuildFile; fileRef = AF93D7821B25F29E00BD05B3 /* digicert-root.cer */; };
 		AF93D7841B25F29E00BD05B3 /* digicert-root.cer in Resources */ = {isa = PBXBuildFile; fileRef = AF93D7821B25F29E00BD05B3 /* digicert-root.cer */; };
+		AF93D7871B25F41E00BD05B3 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93D7861B25F41E00BD05B3 /* PlayerViewController.m */; };
+		AF93D7891B25F44100BD05B3 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF93D7881B25F44100BD05B3 /* PlayerViewController.xib */; };
 		D22D3032566CA5664527DD47 /* libPods-PegasusExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1171D1BD2B1B455E48E64CD6 /* libPods-PegasusExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +160,9 @@
 		AF2350CB1A5D51070095A034 /* StreamDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StreamDescriptor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AF2350CC1A5D51070095A034 /* StreamDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StreamDescriptor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AF93D7821B25F29E00BD05B3 /* digicert-root.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digicert-root.cer"; sourceTree = "<group>"; };
+		AF93D7851B25F41E00BD05B3 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		AF93D7861B25F41E00BD05B3 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		AF93D7881B25F44100BD05B3 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		E7FC81E51F0C2BFD4E6841F0 /* libPods-Pegasus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pegasus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -327,6 +332,9 @@
 				50C02EF11A7AD00C006B730D /* MetadataViewController.h */,
 				50C02EF21A7AD00C006B730D /* MetadataViewController.m */,
 				50C02EF31A7AD00C006B730D /* MetadataViewController.xib */,
+				AF93D7851B25F41E00BD05B3 /* PlayerViewController.h */,
+				AF93D7861B25F41E00BD05B3 /* PlayerViewController.m */,
+				AF93D7881B25F44100BD05B3 /* PlayerViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -520,6 +528,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF93D7891B25F44100BD05B3 /* PlayerViewController.xib in Resources */,
 				508B07BB1A48A4F600DC2375 /* AuthViewController.xib in Resources */,
 				50C02EF51A7AD00C006B730D /* MetadataViewController.xib in Resources */,
 				508B07CC1A49C1A000DC2375 /* SettingsViewController.xib in Resources */,
@@ -630,6 +639,7 @@
 				508B066C1A488BE600DC2375 /* CameraRollViewController.m in Sources */,
 				508B07BA1A48A4F600DC2375 /* AuthViewController.m in Sources */,
 				508B06721A488CF600DC2375 /* TabBarController.m in Sources */,
+				AF93D7871B25F41E00BD05B3 /* PlayerViewController.m in Sources */,
 				508B07D01A49C2C400DC2375 /* SettingsCell.m in Sources */,
 				50C02EF41A7AD00C006B730D /* MetadataViewController.m in Sources */,
 				508B066E1A488BE600DC2375 /* MyVideosViewController.m in Sources */,

@@ -29,7 +29,7 @@
 #import "Datasource.h"
 #import "StreamDescriptor.h"
 
-@interface CollectionViewController : UIViewController <UICollectionViewDelegateFlowLayout, DatasourceDelegate>
+@interface CollectionViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, DatasourceDelegate>
 
 - (instancetype)initWithStreamDescriptor:(StreamDescriptor *)descriptor;
 

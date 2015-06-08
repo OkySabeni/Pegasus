@@ -5,6 +5,7 @@ target 'Pegasus' do
 	pod 'VIMNetworking', '5.4.2'
 	pod 'VIMObjectMapper', '5.4.2'
 	pod 'AFNetworking', '2.5.4'
+    pod 'VIMVideoPlayer', '5.4.2'
 end
 
 target 'PegasusTests' do
