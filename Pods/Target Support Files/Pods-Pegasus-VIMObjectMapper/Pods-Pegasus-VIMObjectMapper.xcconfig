@@ -1,1 +1,0 @@
-PODS_PEGASUS_VIMOBJECTMAPPER_OTHER_LDFLAGS = -framework "Foundation"
